@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia sẻ phần mềm thủ thuật miễn phí</title>
+    <link rel="icon" href="title-icon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1C1C1C;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        nav ul li {
+            float: left;
+            padding: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        nav ul li:last-child {
+            border-right: none;
+        }
+
+        nav ul li a, nav ul li .dropdown-btn {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover, nav ul li .dropdown-btn:hover {
+            background-color: #111;
+        }
+
+        nav ul li .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        nav ul li .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            border: 1px solid transparent;
+        }
+
+        nav ul li .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            border-color: #ddd;
+        }
+
+        nav ul li:hover .dropdown-content {
+            display: block;
+        }
+
+        .nav-icon {
+            margin-right: 8px;
+            width: 20px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+         .search-container {
+            float: right;
+            padding: 8px;
+            margin-left: 15px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .search-container button {
+            padding: 8px 10px;
+            background-color: #1C1C1C;
+            color: white;
+            border: 1px solid #f4f4f4;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #111;
+        }
+
+        h2 {
+            color: #1C1C1C;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a.download-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #1C1C1C;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        a.download-button:hover {
+            background-color:#000;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #CD3333;
+            color: white;
+            padding: 6px;
+            margin: 0 auto; 
+        }
+
+        .footer-top a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .footer-bottom {
+            background-color: #1C1C1C;
+            color: white;
+            text-align: left;
+            padding: 1px 2px;
+            margin: 0 auto; 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="banner-icon.png" alt="Banner Image">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="home-icon.png" class="nav-icon"></a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn"><img src="document-icon.png" class="nav-icon">Tài liệu</a>
+                    <div class="dropdown-content">
+                        <a href="#tailieu1">Tài liệu Tin THPT</a>
+                        <a href="#tailieu2">Tài liệu Tin nâng cao</a>
+                        <a href="#tailieu3">Tài liệu Toán THPT</a>
+                        <a href="#tailieu4">Tài liệu Lý THPT</a>
+                        <a href="#tailieu4">Tài liệu Hóa THPT</a>
+                        <a href="#tailieu4">Tài liệu Tiếng Anh THPT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn"><img src="software-icon.png" class="nav-icon">Phần mềm</a>
+                    <div class="dropdown-content">
+                        <a href="#phanmem1">Window</a>
+                        <a href="#phanmem2">Mac</a>
+                        <a href="#phanmem3">Adroid</a>
+                        <a href="#phanmem4">IOS</a>
+                    </div>
+                </li>
+                <li><a href="tricks.html"><img src="tricks-icon.png" class="nav-icon">Thủ Thuật </a></li>
+                <li><a href="explore.html"><img src="explore-icon.png" class="nav-icon">Khám Phá</a></li>
+                <li><a href="favorite.html"><img src="favorite-icon.png" class="nav-icon">Favorite</a></li>
+                <li><a href="upload.html"><img src="upload-icon.png" class="nav-icon">Upload</a></li>
+                <li class="search-container">
+                    <form action="search_results.html" method="get">
+                        <input type="text" name="q" placeholder="Tìm kiếm..." required>
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content-section">
+                <h2 id="tailieu1">Tài Liệu HTML cơ bản</h2>
+                <ul>
+                    <li>
+                        <strong>Tài liệu HTML cơ bản</strong> - 
+                        <a href="link-to-document1.pdf" class="download-button" download>Tải xuống</a>
+                    </li>
+                    <li>
+                        <strong>Tài liệu CSS nâng cao</strong> - 
+                        <a href="link-to-document2.pdf" class="download-button" download>Tải xuống</a>
+                    </li>
+                    <li>
+                        <strong>Tài liệu JavaScript</strong> - 
+                        <a href="link-to-document3.pdf" class="download-button" download>Tải xuống</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <a href="#">FACEBOOK</a>
+                <a href="#">GIỚI THIỆU</a>
+                <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+                <a href="#">LIÊN HỆ</a>
+            </div>
+            <div class="footer-bottom">
+                <p> Copyright &copy; 2024 | UPTODOWN.online</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
